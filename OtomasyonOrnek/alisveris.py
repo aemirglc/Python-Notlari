@@ -47,16 +47,10 @@ Geçersiz Seçim Yaptınız.
         self.ana_menu()
 
 
-
-
-
     #1.Ekran
-
-
 
     def info(self):
         counter = 0
-        counter_for_price = 0
         for i in self.onaylanan_urun:
             print(f"{counter+1} - {i} ")
             print(f"Toplam fiyat {self.onaylanan_urun_fiyat[counter]}"),
@@ -87,7 +81,6 @@ Sepetinizi onaylamak için 'onayla' yazabilirsiniz.
 Üst menüye dönmek için "Enter"a basabilirsiniz.
 -----------------------------------------------------------------------------------
                 """)
-
 
         try:
             if secim == "onayla":
